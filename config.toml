@@ -1,0 +1,98 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Curtis Fowler's Portfolio"
+
+# theme as hugo module
+#theme = "github.com/lxndrblz/anatole"
+# theme as git submodule
+theme = "anatole"
+
+[params]
+title = "Curtis Fowler"
+author = "Curtis Fowler"
+description = "Learning, tinkering, and kayaking"
+profilePicture = "images/fblaportfolio.jpg"
+mainSections = []
+intro = true
+
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
+
+# Syntax highlighting
+pygmentsUseClasses = true   
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe=true
+
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+[[related.indices]]
+  name = 'keywords'
+  weight = 100
+[[related.indices]]
+  name = 'tags'
+  weight = 80
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/curtis-fowler/"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/curtisf"
+
+[[params.socialIcons]]
+icon = "fa-solid fa-envelope"
+title = "E-Mail"
+url = "mailto:curtis.anthony.fowler@gmail.com"
+
+[menu]
+
+  [[menu.main]]
+  name = "About Me"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Portfolio"
+  weight = 300
+  identifier = "portfolio"
+  url = "/portfolio/"
+
+  [[menu.main]]
+  name = "Contact"
+  weight = 400
+  identifier = "contact"
+  url = "/contact/"
+
+  [[menu.main]]
+  name = "Resume"
+  weight = 200
+  identifier = "resume"
+  url = "/documents/resume.pdf"
+  
+
+[module]
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/lxndrblz/anatole -> ../../anatole"
+  [[module.imports]]
+    path = "github.com/lxndrblz/anatole"
+    disable = false

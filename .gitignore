@@ -1,0 +1,4 @@
+.hugo*
+export
+.vscode
+public/

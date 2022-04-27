@@ -1,0 +1,77 @@
+portfolioitems:
+  # portfolio category
+  - title: Professional Experience
+    # items within a category
+    portfolioitem:
+      - name: Technology Intern Program
+        image: '/images/Capital-One-Emblem.jpg'
+        link: https://www.capitalonecareers.com/internships
+        description: "
+        - Created user-friendly **React** web interface & **Flask** API to automatically explore and onboard large datasets to Capital One’s data lake\n
+        - Generated statistics for datasets, which created value for company by helping onboarding and providing insights to large unknown datasets stuck in S3\n
+        - Profitably utilized **AWS** products (Route53, EC2, ELB, Lambda) to deploy and harden end products to production"
+        tags:
+          - JavaScript
+          - NodeJS
+          - React
+          - Python
+          - AWS
+          - Agile
+          - SQL
+        status: 'Finished'
+        start: '2021'
+        end: '2021'
+        authors:
+          - Curtis Fowler
+
+      - name: Application Developer Intern
+        image: '/images/captech-blue.png'
+        link: https://www.captechconsulting.com/
+        description: "
+        - Created user-friendly graph generator program using **Python**, **SQL**, and **PySpark** that produced data lineage, which reduced time to analyze large data sets from a week to one day\n
+        - Processed graphs were used to support DDE to ECE migration as part of the Data Center Exit Program, which migrated on-prem systems to **AWS**\n
+        - Successfully worked in Capital One's **Agile** environment and managed priorities using Jira"
+        tags:
+          - Python
+          - SQL
+          - AWS
+          - Agile
+          - GraphViz
+        status: 'Finished'
+        start: '2019'
+        end: '2019'
+        authors:
+          - Curtis Fowler
+      
+  - title: Projects
+    # items within a category
+    portfolioitem:
+      - name: LoggerBot V3
+        image: '/images/logger496.png'
+        link: https://github.com/curtisf/logger
+        description: 'Logger is a utility bot for the Discord communication platform. It processes 22+ million messages daily for 50+ million users on the Discord platform (198,000 servers). It utilizes PostgreSQL for persistent storage, and Redis as a short-term caching layer. Logger utilizes custom sharding and load balancing for operating at scale.'
+        tags:
+          - JavaScript
+          - NodeJS
+          - PostgreSQL
+          - Redis
+          - Express
+          - API
+        status: 'Ongoing'
+        start: '2017'
+        authors:
+          - Curtis Fowler
+
+      - name: Simple ZWS Link Shortener
+        image: '/images/gopher.png'
+        link: https://github.com/curtisf/simplezws
+        description: 'SimpleZWS is a link shortener I wrote in Golang for practice and fun. It exposes a web API to upload images to, and returns a shortened link to the image. Shortened links look like the base domain of a website, as the image path is now invisible characters.'
+        tags:
+          - Golang
+          - API
+          - Practice
+        status: 'Finished'
+        start: '2020'
+        end: '2020'
+        authors:
+          - Curtis Fowler
